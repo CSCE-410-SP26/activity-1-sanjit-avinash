@@ -1,0 +1,31 @@
+1. Number of files in root directory: 23
+2. Available user programs in xv6: 
+cat            2 3 35376
+echo           2 4 34288
+forktest       2 5 17232
+grep           2 6 42728
+init           2 7 34752
+kill           2 8 34216
+ln             2 9 34032
+ls             2 10 41504
+mkdir          2 11 34272
+rm             2 12 34264
+sh             2 13 56096
+stressfs       2 14 35136
+usertests      2 15 186016
+grind          2 16 50480
+wc             2 17 36320
+zombie         2 18 33640
+logstress      2 19 36184
+forphan        2 20 35040
+dorphan        2 21 34480
+
+Bonus:
+usertests: This command tests xv6 system calls. For every test, "OK" was reported. At the end, "ALL TESTS PASSED" was outputted.
+time: 4 mins 22 sec
+
+forktest: This command displayed two lines, one with "fork test" and the next with "fork test OK". This command ensures that fork() fails gracefully and safely.
+time: <1 sec
+
+stressfs: This command displayed a series of 5 writes and 5 reads. Its purpose is stress the xv6 filesystem to expose race conditions.
+time: 1 sec
